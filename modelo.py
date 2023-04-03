@@ -94,6 +94,9 @@ for programa in playlist_fim_de_semana:
   
   
 class Funcionario:
+    def __init__(self, nome):
+        self.nome = nome
+
     def registra_horas(self, horas):
         print('Horas registradas...')
 
@@ -120,11 +123,9 @@ class Junior(Alura):
 class Pleno(Alura, Caelum):
     pass
 
-jose = Junior()
-jose.busca_perguntas_sem_resposta()
+class Hipster:
+    def __str__(self):
+        return f'Hipster, {self.nome}'
 
-luan = Pleno()
-luan.busca_perguntas_sem_resposta()
-luan.busca_cursos_do_mes()
-
-luan.mostrar_tarefas()
+luan = Senior('Luan')
+print(luan)
