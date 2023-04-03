@@ -4,7 +4,7 @@ class Afiliado:
     def __init__(self, nome, sobrenome, nascimento, cpf, rg, endereco, contato):
         self.nome= nome.title()
         self.sobrenome= sobrenome.title()
-        self._nascimento=nascimento
+        self._nascimento=nascimento.datatime()
         self.cpf=cpf
         self._rg=rg
         self.endereco=endereco
@@ -66,6 +66,7 @@ for Afiliado in clientes:
 
 apol1=Apolice("3214687","VIDA","500000","José Silva","Jonas Macedo","24/03/2024","11/03/2016","ATIVA")
 apol2=Apolice("3215688","CARRO","300000","José Silva","Jonas Macedo","24/03/2024","11/03/2016","ATIVA")
-apolices=[apol1,apol2]
+
+
 
 
